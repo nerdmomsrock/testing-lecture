@@ -1,3 +1,4 @@
+import { faToiletPaperSlash } from "@fortawesome/free-solid-svg-icons";
 import bankAccount, { depositMoney } from "../bankAccount";
 
 function inAscOrder(arr) {
@@ -39,6 +40,19 @@ describe("bankAccount", () => {
   beforeEach(() => {
     bankAccount.balance = 1000;
   });
+
+//   afterEach(() => { //runs after each test if we need it
+
+// //   })
+
+// before(() => {
+//     runs before all of the testing, not each individual
+// })
+
+// after(() => {
+//     runs after all testing, not each individual
+// })
+
   test("balance should be a number", () => {
     expect(typeof bankAccount.balance).toBe("number"); //typeof checks kind of data
   });
